@@ -1,0 +1,30 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-sudoku-solver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#0d1424"/>
+    </linearGradient>
+    <pattern id="grid-sudoku-solver" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 H0 V30" fill="none" stroke="#b026ff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="glow-sudoku-solver">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg-sudoku-solver)"/>
+  <rect width="600" height="400" fill="url(#grid-sudoku-solver)"/>
+  <rect x="2" y="2" width="596" height="396" fill="none" stroke="#b026ff" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="28" cy="28" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="28" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="28" r="6" fill="#28c840"/>
+  <text x="300" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#7d8aa3">~/projects/sudoku-solver</text>
+  <g transform="translate(200,30) scale(1)" filter="url(#glow-sudoku-solver)" opacity="0.95">
+    <g fill="none" stroke="#b026ff" stroke-width="4"><rect x="55" y="55" width="90" height="90"/><line x1="85" y1="55" x2="85" y2="145"/><line x1="115" y1="55" x2="115" y2="145"/><line x1="55" y1="85" x2="145" y2="85"/><line x1="55" y1="115" x2="145" y2="115"/></g><text x="68" y="78" font-family="JetBrains Mono, monospace" font-size="16" fill="#b026ff">5</text><text x="98" y="108" font-family="JetBrains Mono, monospace" font-size="16" fill="#b026ff">3</text><text x="128" y="138" font-family="JetBrains Mono, monospace" font-size="16" fill="#b026ff">9</text>
+  </g>
+  <text x="300" y="320" text-anchor="middle" font-family="Sora, sans-serif" font-size="26" font-weight="700" fill="#e8f3ff">Sudoku-Solver</text>
+  <text x="300" y="350" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" fill="#b026ff">&gt; view_on_github --repo</text>
+</svg>

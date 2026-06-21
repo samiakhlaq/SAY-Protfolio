@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAY Portfolio — MD Sami Akhlaq</title>
+<meta name="description" content="MD Sami Akhlaq — Computer Science student building projects in cybersecurity, machine learning and data science.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="noscript-data" id="dataError" hidden>
+  <div class="noscript-box">
+    <p><strong>Can't load data.json.</strong></p>
+    <p>If you opened this file directly by double-clicking it, your browser blocks local file loading. Run a tiny local server instead, e.g.:</p>
+    <code>python -m http.server 8000</code>
+    <p>then visit <code>http://localhost:8000</code>. This works normally once hosted on GitHub Pages, Netlify, or any web server.</p>
+  </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <nav class="nav-wrap">
+    <a href="#top" class="logo">sami<span class="cursor-blink">@</span>portfolio<span class="prompt-sign">:~$</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">about</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#achievements">achievements</a></li>
+      <li><a href="#research">research</a></li>
+      <li><a href="#collaboration">collaborate</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact" class="nav-cta">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="terminal-window hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-path">~/sami-akhlaq/intro.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p class="term-line"><span class="prompt">$</span> <span id="typeWhoami"></span></p>
+          <p class="term-line term-output" id="typeName"></p>
+          <p class="term-line"><span class="prompt">$</span> <span id="typeRole"></span></p>
+          <p class="term-line term-output" id="typeRoleOut"></p>
+          <p class="term-line"><span class="prompt">$</span> <span id="typeStatus"></span></p>
+          <p class="term-line term-output">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="availabilityText"></span>
+          </p>
+          <span class="blink-cursor" id="finalCursor">&#9608;</span>
+        </div>
+      </div>
+      <div class="hero-actions" id="heroActions" style="opacity:0">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-photo-wrap">
+        <div class="photo-frame">
+          <img id="profilePhoto" src="" alt="Portrait of MD Sami Akhlaq">
+          <div class="photo-corner tl"></div>
+          <div class="photo-corner br"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">// about</p>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="about-bio" id="aboutBio"></p>
+        <div class="about-meta" id="aboutMeta"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="eyebrow eyebrow-spaced">// focus areas</p>
+      <div class="focus-grid" id="focusGrid"></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="eyebrow">// education</p>
+      <h2 class="section-title">Academic Path</h2>
+      <div class="timeline" id="educationTimeline"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="eyebrow">// projects</p>
+      <h2 class="section-title">Things I've Built</h2>
+      <p class="section-sub">Cybersecurity tools, algorithms, and problem-solving — click any card to open the repository.</p>
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <p class="eyebrow">// achievements</p>
+      <h2 class="section-title">Achievements</h2>
+      <div class="card-list" id="achievementsList"></div>
+      <p class="empty-state" id="achievementsEmpty" hidden></p>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="container">
+      <p class="eyebrow">// research</p>
+      <h2 class="section-title">Research</h2>
+      <div class="card-list" id="researchList"></div>
+      <p class="empty-state" id="researchEmpty" hidden></p>
+    </div>
+  </section>
+
+  <!-- COLLABORATION -->
+  <section class="section" id="collaboration">
+    <div class="container">
+      <p class="eyebrow">// collaboration</p>
+      <h2 class="section-title" id="collabHeading">Open to Collaboration</h2>
+      <p class="section-sub" id="collabDescription"></p>
+      <div class="card-list" id="collabList"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="eyebrow">// experience</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline" id="experienceTimeline"></div>
+      <p class="empty-state" id="experienceEmpty" hidden></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <p class="eyebrow">// contact</p>
+      <h2 class="section-title">Let's Talk</h2>
+      <p class="section-sub">Reach out for collaboration, opportunities, or just to say hi.</p>
+      <div class="contact-grid">
+        <div class="contact-actions">
+          <a href="#" id="emailBtn" class="btn btn-primary">Email Me</a>
+          <button type="button" id="copyEmailBtn" class="btn btn-ghost">Copy Email</button>
+          <a href="#" id="callBtn" class="btn btn-ghost">Call</a>
+        </div>
+        <div class="social-row" id="socialRow"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p id="footerName">MD Sami Akhlaq</p>
+    <p class="footer-sub">Designed &amp; built with intent. <a href="editor.html" class="editor-link">Editor</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

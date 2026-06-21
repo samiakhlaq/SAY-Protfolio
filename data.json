@@ -1,0 +1,155 @@
+{
+  "profile": {
+    "name": "MD Sami Akhlaq",
+    "shortName": "Sami Akhlaq",
+    "title": "SAY Portfolio",
+    "role": "Computer Science Student",
+    "tagline": "Building security tools, ML experiments and clean solutions to real problems.",
+    "bio": "I'm a Computer Science student from Bangladesh, currently pursuing my BSc in CSE. I build projects around cybersecurity, machine learning and data science, and spend a lot of time solving problems on Codeforces and LeetCode. I'm early in my journey, but I'm serious about it — every project here is a step toward working on real-world security and ML problems.",
+    "photo": "images/profile.jpg",
+    "location": "Dhaka, Bangladesh",
+    "nationality": "Bangladeshi",
+    "email": "mdakhlaq2345@gmail.com",
+    "phone": "+8801570263883",
+    "availability": "Open to internships & collaboration",
+    "resumeUrl": ""
+  },
+  "socials": [
+    { "platform": "GitHub", "url": "https://github.com/samiakhlaq", "icon": "github" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/md-sami-akhlaq-2838b0334/", "icon": "linkedin" },
+    { "platform": "X", "url": "https://x.com/akhlaq_md_01", "icon": "x" },
+    { "platform": "Facebook", "url": "https://www.facebook.com/say.yashh", "icon": "facebook" },
+    { "platform": "Instagram", "url": "https://www.instagram.com/md_akhlaq_01", "icon": "instagram" },
+    { "platform": "Email", "url": "mailto:mdakhlaq2345@gmail.com", "icon": "mail" }
+  ],
+  "education": [
+    {
+      "degree": "BSc in Computer Science & Engineering",
+      "institution": "Saic Institute of Technology & Management",
+      "level": "Bachelor's Degree",
+      "period": "Ongoing",
+      "status": "current"
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC) — Science",
+      "institution": "BCIC College",
+      "level": "Higher Secondary",
+      "period": "Completed",
+      "status": "done"
+    },
+    {
+      "degree": "Secondary School Certificate (SSC) — Science",
+      "institution": "Monipur High School & College",
+      "level": "Secondary",
+      "period": "Completed",
+      "status": "done"
+    }
+  ],
+  "focusAreas": [
+    {
+      "title": "Cybersecurity",
+      "description": "Building tools that analyze and strengthen everyday security, like password and credential analysis.",
+      "icon": "shield"
+    },
+    {
+      "title": "Machine Learning",
+      "description": "Exploring models and experiments that turn data into decisions.",
+      "icon": "cpu"
+    },
+    {
+      "title": "Data Science",
+      "description": "Working with data to find patterns and build practical, usable insights.",
+      "icon": "chart"
+    },
+    {
+      "title": "Competitive Programming",
+      "description": "Sharpening problem-solving on Codeforces and LeetCode, one problem at a time.",
+      "icon": "terminal"
+    }
+  ],
+  "projects": [
+    {
+      "id": "securepass-analyzer",
+      "title": "SecurePass-Analyzer",
+      "category": "Cybersecurity",
+      "description": "A tool that analyzes password strength and flags weak credentials before they become a security risk.",
+      "image": "images/securepass-analyzer.svg",
+      "githubUrl": "https://github.com/samiakhlaq/SecurePass-Analyzer",
+      "tags": ["Cybersecurity", "Python"]
+    },
+    {
+      "id": "tic-tac-toe-3x3",
+      "title": "Tic-Tac-Toe-3x3",
+      "category": "Game / Algorithm",
+      "description": "The classic 3x3 Tic-Tac-Toe game, built to practice game logic and clean state management.",
+      "image": "images/tic-tac-toe-3x3.svg",
+      "githubUrl": "https://github.com/samiakhlaq/Tic-Tac-Toe-3x3",
+      "tags": ["Game", "Logic"]
+    },
+    {
+      "id": "tic-tac-toe-5x5",
+      "title": "Tic-Tac-Toe-5x5",
+      "category": "Game / Algorithm",
+      "description": "An extended 5x5 version of Tic-Tac-Toe with tougher win conditions and more strategic depth.",
+      "image": "images/tic-tac-toe-5x5.svg",
+      "githubUrl": "https://github.com/samiakhlaq/Tic-Tac-Toe-5x5",
+      "tags": ["Game", "Logic"]
+    },
+    {
+      "id": "sudoku-solver",
+      "title": "Sudoku-Solver",
+      "category": "Algorithm",
+      "description": "An automated Sudoku solver built around backtracking and constraint logic.",
+      "image": "images/sudoku-solver.svg",
+      "githubUrl": "https://github.com/samiakhlaq/Sudoku-Solver",
+      "tags": ["Algorithm", "Backtracking"]
+    },
+    {
+      "id": "say-portfolio",
+      "title": "SAY-Portfolio",
+      "category": "Web",
+      "description": "This portfolio site itself — dark, neon, and fully editable from a private dashboard.",
+      "image": "images/say-portfolio.svg",
+      "githubUrl": "https://github.com/samiakhlaq/SAY-Protfolio",
+      "tags": ["Web", "Design"]
+    },
+    {
+      "id": "qr-code-generator",
+      "title": "QR-Code-Generator",
+      "category": "Tool",
+      "description": "A simple utility that generates scannable QR codes from any text or link.",
+      "image": "images/qr-code-generator.svg",
+      "githubUrl": "https://github.com/samiakhlaq/QR-Code-Generator",
+      "tags": ["Tool", "Python"]
+    },
+    {
+      "id": "codeforces-solutions",
+      "title": "CodeForces-Solutions",
+      "category": "Competitive Programming",
+      "description": "A growing archive of solved Codeforces problems and the reasoning behind each approach.",
+      "image": "images/codeforces-solutions.svg",
+      "githubUrl": "https://github.com/samiakhlaq/CodeForces-Solutions",
+      "tags": ["Competitive Programming"]
+    },
+    {
+      "id": "leetcode-solutions",
+      "title": "LeetCode-Solutions",
+      "category": "Competitive Programming",
+      "description": "Solutions and notes from working through LeetCode problems across difficulty levels.",
+      "image": "images/leetcode-solutions.svg",
+      "githubUrl": "https://github.com/samiakhlaq/LeetCode-Solution",
+      "tags": ["Competitive Programming"]
+    }
+  ],
+  "achievements": [],
+  "achievementsEmptyText": "Achievements will be listed here as Sami earns them — certifications, contest placements and recognitions are on the way.",
+  "research": [],
+  "researchEmptyText": "No published research yet. Sami is building the project foundation first, with research work to follow in cybersecurity and applied ML.",
+  "collaboration": {
+    "heading": "Open to Collaboration",
+    "description": "I'm looking to collaborate with other developers on projects involving cybersecurity, machine learning, data science and competitive programming. If you're working on something interesting, reach out.",
+    "items": []
+  },
+  "experience": [],
+  "experienceEmptyText": "No formal work experience yet. Sami is actively seeking internships and entry-level opportunities in cybersecurity and software development."
+}
