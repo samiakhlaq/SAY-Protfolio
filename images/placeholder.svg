@@ -1,0 +1,24 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-ph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="100%" stop-color="#0d1424"/>
+    </linearGradient>
+    <pattern id="grid-ph" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 H0 V30" fill="none" stroke="#00f6ff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg-ph)"/>
+  <rect width="600" height="400" fill="url(#grid-ph)"/>
+  <rect x="2" y="2" width="596" height="396" fill="none" stroke="#00f6ff" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="28" cy="28" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="28" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="28" r="6" fill="#28c840"/>
+  <text x="300" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#7d8aa3">~/projects/new</text>
+  <g transform="translate(250,140)" opacity="0.9">
+    <rect x="0" y="0" width="100" height="80" rx="6" fill="none" stroke="#b026ff" stroke-width="4"/>
+    <path d="M20 55 L40 35 L55 50 L80 25" fill="none" stroke="#b026ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="300" y="320" text-anchor="middle" font-family="Sora, sans-serif" font-size="24" font-weight="700" fill="#e8f3ff">Add a screenshot</text>
+  <text x="300" y="350" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" fill="#b026ff">&gt; upload via editor.html</text>
+</svg>
