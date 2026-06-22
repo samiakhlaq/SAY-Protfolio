@@ -73,7 +73,7 @@
       "id": "file-type-verifier",
       "title": "File Type Verifier",
       "category": "Tool",
-      "description": "A simple utility to verify the type of a file based on its header.",
+      "description": "A powerful Python-based CLI tool that analyzes files using magic number signatures, binary analysis, and Shannon entropy detection to accurately identify file types — even when extensions are missing or spoofed.",
       "image": "images/file-type-verifier.svg",
       "githubUrl": "https://github.com/samiakhlaq/File-Type-Verifier",
       "tags": ["Cybersecurity", "Python"]
