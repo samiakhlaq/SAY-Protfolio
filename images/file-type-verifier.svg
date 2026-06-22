@@ -1,0 +1,103 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-ftv" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07100b"/>
+      <stop offset="100%" stop-color="#0d1f14"/>
+    </linearGradient>
+    <pattern id="grid-ftv" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 H0 V30" fill="none" stroke="#00ff88" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="glow-ftv">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-soft">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg-ftv)"/>
+  <rect width="600" height="400" fill="url(#grid-ftv)"/>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="596" height="396" fill="none" stroke="#00ff88" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- Window dots -->
+  <circle cx="28" cy="28" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="28" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="28" r="6" fill="#28c840"/>
+
+  <!-- Window title bar path -->
+  <text x="300" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#7d8aa3">~/projects/file-type-verifier</text>
+
+  <!-- Central icon group: file with magnifier -->
+  <g transform="translate(230, 60)" filter="url(#glow-ftv)" opacity="0.95">
+    <!-- File document shape -->
+    <path d="M30 10 L70 10 L90 30 L90 120 L30 120 Z" fill="none" stroke="#00ff88" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Folded corner -->
+    <path d="M70 10 L70 30 L90 30" fill="none" stroke="#00ff88" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- File lines (content preview) -->
+    <line x1="42" y1="50" x2="78" y2="50" stroke="#00ff88" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="42" y1="64" x2="78" y2="64" stroke="#00ff88" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="42" y1="78" x2="65" y2="78" stroke="#00ff88" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+    <!-- Magnifier circle -->
+    <circle cx="105" cy="110" r="22" fill="none" stroke="#00ff88" stroke-width="4"/>
+    <!-- Magnifier handle -->
+    <line x1="121" y1="126" x2="138" y2="143" stroke="#00ff88" stroke-width="5" stroke-linecap="round"/>
+    <!-- Magnifier inner cross (search symbol) -->
+    <line x1="95" y1="110" x2="115" y2="110" stroke="#00ff88" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="105" y1="100" x2="105" y2="120" stroke="#00ff88" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Entropy bar (decorative) -->
+  <g transform="translate(60, 240)">
+    <text font-family="JetBrains Mono, monospace" font-size="10" fill="#7d8aa3">ENTROPY</text>
+    <!-- bar background -->
+    <rect x="0" y="14" width="200" height="8" rx="4" fill="#1a2a1e"/>
+    <!-- bar fill segments -->
+    <rect x="0" y="14" width="50"  height="8" rx="4" fill="#00ff88" opacity="0.9"/>
+    <rect x="52" y="14" width="40" height="8" rx="2" fill="#febc2e" opacity="0.8"/>
+    <rect x="94" y="14" width="35" height="8" rx="2" fill="#ff5f57" opacity="0.7"/>
+    <text x="210" y="23" font-family="JetBrains Mono, monospace" font-size="11" fill="#00ff88">6.23</text>
+  </g>
+
+  <!-- Status labels -->
+  <g transform="translate(60, 280)">
+    <!-- MATCH tag -->
+    <rect x="0" y="0" width="64" height="20" rx="4" fill="#00ff88" fill-opacity="0.15" stroke="#00ff88" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="32" y="14" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#00ff88">✔ MATCH</text>
+    <!-- MISMATCH tag -->
+    <rect x="76" y="0" width="90" height="20" rx="4" fill="#ff5f57" fill-opacity="0.15" stroke="#ff5f57" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="121" y="14" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#ff5f57">✘ MISMATCH</text>
+    <!-- SUSPICIOUS tag -->
+    <rect x="178" y="0" width="100" height="20" rx="4" fill="#febc2e" fill-opacity="0.15" stroke="#febc2e" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="228" y="14" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#febc2e">[SUSPICIOUS]</text>
+  </g>
+
+  <!-- Hex dump preview lines -->
+  <g transform="translate(60, 318)" font-family="JetBrains Mono, monospace" font-size="10">
+    <text fill="#4a5568">00000000  </text>
+    <text x="70" fill="#00ff88" opacity="0.7">4D 5A 90 00 03 00 00 00  04 00 00 00 FF FF 00 00</text>
+    <text x="0" y="14" fill="#4a5568">00000010  </text>
+    <text x="70" y="14" fill="#00ff88" opacity="0.45">B8 00 00 00 00 00 00 00  40 00 00 00 00 00 00 00</text>
+  </g>
+
+  <!-- 50+ signatures badge -->
+  <g transform="translate(430, 240)" filter="url(#glow-soft)">
+    <rect x="0" y="0" width="110" height="60" rx="8" fill="#0d1f14" stroke="#00ff88" stroke-width="1.5" stroke-opacity="0.6"/>
+    <text x="55" y="22" text-anchor="middle" font-family="Sora, sans-serif" font-size="22" font-weight="700" fill="#00ff88">50+</text>
+    <text x="55" y="40" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#7d8aa3">Signatures</text>
+    <text x="55" y="54" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#7d8aa3">File Types</text>
+  </g>
+
+  <!-- Title -->
+  <text x="300" y="378" text-anchor="middle" font-family="Sora, sans-serif" font-size="24" font-weight="700" fill="#e8f3ff">File-Type-Verifier</text>
+</svg>
